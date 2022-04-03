@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+    <script src="script.js"></script>
+    <script src="statistics.js"></script>
+   
+
+</head>
+<body>
+    <div class="tools">
+        <h1 style="color:yellowgreen">Events</h1>
+        <ul>
+            <li>
+                <button onclick="kill()">Kill them all</button>
+            </li>
+            <li>
+                <button onclick="addGrass()">Add grass</button>
+            </li>
+            <li>
+                <button onclick="addGrassEater()">Add grasseater</button>
+            </li>
+            <li>
+                <button onclick="addAllEater()">Add AllEater</button>
+            </li>
+            <li>
+                <button onclick="addAeEater()">Add AeEater</button>
+            </li>
+            <li>
+                <button onclick="addFunnyKiller()">Add FunnyKiller</button>
+            </li>
+        </ul>
+    </div>
+    <div class="divs">
+        <h3>
+            Grasses: <span style="color: green;" class="grassStatistics">0</span><br>
+            GrassEateres: <span style="color: #ffd400;" class="grassEaterStatistics">0</span><br>
+            AllEaters: <span style="color: red;" class="allEatersStatistics">0</span><br>
+            AeEaters: <span style="color: blue;" class="aeEatersStatistics">0</span><br>
+            FunnyKiller: <span style="color: #acacac;" class="funnyKillerStatistics">0</span>
+        </h3>
+    </div>
+</body>
+</html>
